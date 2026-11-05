@@ -173,3 +173,7 @@ Para cada mudança, registrar data, objetivo, decisão, arquivos afetados, coman
 - Nova regra `packaging/udev/71-fairy-mouse.rules`: uaccess para ID_INPUT_MOUSE, excluindo teclados. A regra do Logitech foi movida para `packaging/udev/legacy/`, e `install-mouse-access.sh` a remove de /etc só se estiver idêntica. Serviço sem `--click-device`. Diagnóstico passou a informar a regra nova, a antiga e os nós legíveis.
 - README reescrito; ACESSO_MOUSE, INSTALACAO, CLAUDE.md, regra de instalação e contexto atualizados. A URL do GitHub ficou como placeholder.
 - Verificado: 53 testes OK, compileall, `bash -n` nos três scripts, `udevadm verify` nas duas regras, instalação/remoção em staging com espaço no caminho e diagnóstico real. **Não executados:** `instalar.sh`/`desinstalar.sh` no host (exigem sudo e alteram serviço e udev), remoção da regra antiga em /etc e a regra genérica com outros mouses.
+
+## 2026-11-05 — Publicação no GitHub
+- O usuário criou `TamyDB/fairy-mouse-effects` e preferiu SSH, que já estava configurado. Repositório Git inicializado no workspace (branch main), commit inicial `de24dcc` enviado e conferido com `git ls-remote`. A API do GitHub confirma que ele é público.
+- O URL do clone no README usa a grafia oficial TamyDB.

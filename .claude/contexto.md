@@ -25,7 +25,7 @@ systemctl --user status fairy-mouse.service --no-pager
 systemctl --user is-enabled fairy-mouse.service
 ```
 
-Instalação para leigos: `bash instalar.sh` (dnf das dependências, regra udev, cópia do usuário, enable e start se houver Sway). Rodar de novo atualiza. `bash desinstalar.sh` remove. `tools/install-user.py` sozinho continua preparando o serviço desabilitado. A cópia em `~/.local/share/fairy-mouse` é independente do repositório. README reescrito: parte leiga no topo, "Detalhes técnicos" abaixo. URL do clone: github.com/tamydb/fairy-mouse-effects.
+Instalação para leigos: `bash instalar.sh` (dnf das dependências, regra udev, cópia do usuário, enable e start se houver Sway). Rodar de novo atualiza. `bash desinstalar.sh` remove. `tools/install-user.py` sozinho continua preparando o serviço desabilitado. A cópia em `~/.local/share/fairy-mouse` é independente do repositório. README reescrito: parte leiga no topo, "Detalhes técnicos" abaixo. URL do clone: github.com/TamyDB/fairy-mouse-effects.
 
 Modo direto, com serviço parado: `/usr/bin/python3 -m fairy_mouse --background`. Encerrar com Ctrl+C. Não iniciar duas instâncias.
 
@@ -50,6 +50,6 @@ Suíte executada no Claude Code em 2026-11-05: 53 testes, 53 aprovados, nenhum i
 
 Por decisão do usuário, adiar medições de consumo e teste após reboot. Limites atuais: 48 partículas e 30 FPS por padrão; não são benchmarks. Não suportados: tap-to-click, remapeamentos e cliques virtuais. Vários monitores, escalas e encerramento completo com a sessão ainda precisam de testes reais mais amplos.
 
-Publicação pendente: criar `fairy-mouse-effects` no GitHub e enviar código/documentação. Não houve confirmação de criação ou push. A integração GitHub não estava conectada e a pasta .git era vazia/somente leitura na sessão anterior. Um commit foi preparado apenas em /tmp; não presumir que esse artefato temporário ainda exista ou que seja o histórico do workspace. A visibilidade privada foi proposta pelo assistente, não confirmada explicitamente pelo usuário. Verificar autenticação, repositório e histórico reais antes de publicar.
+Publicado em 2026-11-05: https://github.com/TamyDB/fairy-mouse-effects (público, branch main, remoto SSH `git@github.com:TamyDB/fairy-mouse-effects.git`). Push e visibilidade conferidos com git ls-remote e a API do GitHub. gh não está instalado; o usuário usa SSH.
 
 Próxima melhoria funcional sugerida: salvar cor, intensidade e FPS em arquivo. Ainda não implementada nem iniciada; o usuário priorizou a migração da documentação para o Claude.

@@ -17,7 +17,7 @@ Você vai precisar abrir o **Terminal** e colar dois comandos. A instalação é
 **2.** Copie a linha abaixo, cole no Terminal com **Ctrl + Shift + V** e aperte **Enter**. Ela baixa o Fairy Mouse para a sua pasta pessoal:
 
 ```bash
-git clone https://github.com/tamydb/fairy-mouse-effects.git ~/fairy-mouse
+git clone https://github.com/TamyDB/fairy-mouse-effects.git ~/fairy-mouse
 ```
 
 **3.** Agora cole esta linha e aperte **Enter**:
