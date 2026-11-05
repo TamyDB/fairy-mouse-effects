@@ -1,0 +1,15 @@
+# Managed by fairy-mouse user installer.
+[Unit]
+Description=Fairy Mouse cursor effects for Sway
+PartOf=sway-session.target graphical-session.target
+After=graphical-session-pre.target
+ConditionEnvironment=WAYLAND_DISPLAY
+
+[Service]
+Type=simple
+ExecStart=@EXECUTABLE@ --background
+Restart=no
+TimeoutStopSec=5
+
+[Install]
+WantedBy=sway-session.target

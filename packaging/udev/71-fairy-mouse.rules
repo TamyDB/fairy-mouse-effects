@@ -1,0 +1,4 @@
+# Fairy Mouse: leitura de clique de qualquer mouse pelo usuário da sessão local ativa.
+# Somente interfaces classificadas como mouse; interfaces de teclado ficam de fora.
+# Must precede 73-seat-late.rules so logind's uaccess builtin can apply session ACLs.
+ACTION!="remove", SUBSYSTEM=="input", KERNEL=="event*", ENV{ID_INPUT_MOUSE}=="1", ENV{ID_INPUT_KEYBOARD}!="1", TAG+="uaccess"

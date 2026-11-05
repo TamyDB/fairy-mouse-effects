@@ -1,0 +1,4 @@
+# Fairy Mouse: Logitech Wireless Mouse (input product 4054, not USB receiver c534).
+# Match attributes on the same input parent; exclude the receiver keyboard.
+# Must precede 73-seat-late.rules so logind's uaccess builtin can apply session ACLs.
+ACTION!="remove", SUBSYSTEM=="input", KERNEL=="event*", ENV{ID_INPUT_MOUSE}=="1", ENV{ID_INPUT_KEYBOARD}!="1", ATTRS{name}=="Logitech Wireless Mouse", ATTRS{id/vendor}=="046d", ATTRS{id/product}=="4054", TAG+="uaccess", SYMLINK+="input/fairy-mouse-logitech"
